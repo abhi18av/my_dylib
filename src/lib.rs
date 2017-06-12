@@ -10,20 +10,6 @@ pub extern "C" fn print_number(x: i32) {
     println!("x is: {}", x);
 }
 
-//julia> x = ccall((:addition, "libmy_dylib.dylib"), UInt32, (UInt32,UInt32), 2,2)
-//0x00000004
-
-//julia> Int(x)
-//4
-
-//julia> function rust_addition(a::Int, b::Int)
-//      val = ccall((:addition, "libmy_dylib.dylib"), UInt32, (UInt32,UInt32), a,b)
-//     println(val)
-//    end
-//rust_addition (generic function with 1 method)
-
-//julia> rust_addition(1,2)
-
 
 
 #[no_mangle]
